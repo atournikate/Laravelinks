@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
+
+    public function __construct() {
+        $this->middleware(['auth'])->only('store', 'destroy');
+    }
+
     public function index() {
         //returns all posts in natural database order, creates a collections
         // $posts = Post::get(); this is not ideal for giant repos

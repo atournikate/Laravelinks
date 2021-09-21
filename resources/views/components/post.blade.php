@@ -14,7 +14,7 @@
         {{-- <div> --}}
 
             @can('delete', $post)
-            <form action="{{ route('posts.destroy', $post) }}" method="post" class="btn postLike">
+            <form action="{{ route('posts.destroy', $post) }}" method="post" class="rateItem">
                 @csrf
                 @method('DELETE')
                 <button type="submit" class="postBtn">Delete</button>

@@ -39,6 +39,7 @@
 }
 
 .btn-log {
+  @extend .btn;
   width: 5em;
   margin: 0;
   padding: 2px;

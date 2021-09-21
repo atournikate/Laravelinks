@@ -18,7 +18,7 @@ header nav ul li {
   padding: 0.9rem;
 }
 
-.btn, .postBtn {
+.btn, .btn-log, .postBtn {
   display: inline-block;
   background-color: #f69d0d;
   color: #222f37;
@@ -30,7 +30,7 @@ header nav ul li {
   box-shadow: 3px 4px 7px rgba(34, 47, 55, 0.3);
   transition: all 1s ease-in-out;
 }
-.btn::after, .postBtn::after {
+.btn::after, .btn-log::after, .postBtn::after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -39,12 +39,12 @@ header nav ul li {
   box-shadow: 3px 5px 10px rgba(34, 47, 55, 0.75);
   transition: opacity 1s ease-in-out;
 }
-.btn:hover, .postBtn:hover {
+.btn:hover, .btn-log:hover, .postBtn:hover {
   background-color: #222f37;
   color: #f69d0d;
   transform: scale(0.95);
 }
-.btn:hover::after, .postBtn:hover::after {
+.btn:hover::after, .btn-log:hover::after, .postBtn:hover::after {
   opacity: 1;
   transform: scale(0.95);
 }
@@ -158,4 +158,19 @@ form input[type=checkbox] {
 svg {
   display: inline-block;
   max-width: 12px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 20px;
+  background: #edf5f6;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.footer img {
+  height: 30px;
 }

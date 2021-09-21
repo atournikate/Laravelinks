@@ -54,6 +54,9 @@
     
 
     <footer class="footer">
+        <img src="{{ asset('images/STZH_SEB_Logo.png') }}" alt="">
+        <img src="{{ asset('images/SAG_Logo_De.png') }}" alt="">
+        <img src="{{ asset('images/Opportunity.png') }}" alt="">
 
     </footer>
 </body>

@@ -85,3 +85,19 @@ svg {
   display: inline-block;
   max-width: 12px;
 }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 20px;
+  background: lighten($light, 10%);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  img {
+    height: 30px;
+  }
+}
