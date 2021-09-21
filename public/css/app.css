@@ -1,0 +1,160 @@
+@import url(https://fonts.googleapis.com/css2?family=Radley:ital@0;1&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+header {
+  margin-bottom: 1.5rem;
+}
+header nav {
+  background-color: #427183;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+}
+header nav ul li {
+  padding: 0.9rem;
+}
+
+.btn, .btn-log {
+  display: inline-block;
+  background-color: #f69d0d;
+  color: #222f37;
+  width: 10em;
+  margin: auto 3px;
+  padding: 1.2rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  box-shadow: 3px 4px 7px rgba(34, 47, 55, 0.3);
+  transition: all 1s ease-in-out;
+}
+.btn::after, .btn-log::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  border-radius: 5px;
+  box-shadow: 3px 5px 10px rgba(34, 47, 55, 0.75);
+  transition: opacity 1s ease-in-out;
+}
+.btn:hover, .btn-log:hover {
+  background-color: #222f37;
+  color: #f69d0d;
+  transform: scale(0.95);
+}
+.btn:hover::after, .btn-log:hover::after {
+  opacity: 1;
+  transform: scale(0.95);
+}
+
+.btn-log {
+  width: 5em;
+  margin: 0;
+  padding: 2px;
+  font-size: 1rem;
+}
+
+.postCard {
+  width: 90%;
+  margin: 20px;
+  padding: 10px;
+  background-color: #538ea5;
+  border-radius: 5px;
+  box-shadow: 3px 5px 10px rgba(34, 47, 55, 0.75);
+}
+.postCard .poster {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.postCard .postLight {
+  color: #cae2e6;
+  font-size: 0.9rem;
+}
+.postCard .postRate {
+  display: flex;
+  align-items: center;
+}
+.postCard .postRate .rateItem {
+  margin-right: 0.25rem;
+}
+.postCard .postRate .postLike {
+  width: 4em;
+  padding: 5px;
+  font-size: 1rem;
+}
+
+body {
+  background-color: #cae2e6;
+  color: #222f37;
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-family: "Radley", serif;
+}
+body a {
+  text-decoration: none;
+  color: #222f37;
+}
+body a:hover {
+  color: #f69d0d;
+  text-decoration: underline;
+  transition: all 0.3s ease-in-out;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+.container .item,
+.container .writePost {
+  width: 80vw;
+  background-color: #427183;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.container .registry {
+  width: 50vw;
+}
+
+form {
+  color: white;
+  font-size: 1.2em;
+}
+form .formField {
+  margin-bottom: 1rem;
+}
+form input {
+  width: 90%;
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid #222f37;
+  border-radius: 5px;
+}
+form input[type=checkbox] {
+  width: auto !important;
+}
+form input .postBody {
+  content: "";
+  width: 70vw;
+}
+
+.alert {
+  color: #f69d0d;
+}
+
+.box {
+  border: 3px solid #f69d0d;
+}
+
+svg {
+  display: inline-block;
+  max-width: 12px;
+}

@@ -1,0 +1,21 @@
+header {
+    nav {
+        background-color: $blue;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            list-style-type: none;
+
+            li {
+                padding: 0.9rem;
+            }
+        }
+    }
+
+    margin-bottom: 1.5rem;
+}
