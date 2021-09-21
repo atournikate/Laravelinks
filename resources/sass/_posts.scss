@@ -1,26 +1,32 @@
-.postCard {
-  margin: 20px;
-  padding: 10px;
-  background-color: lighten($blue, 10%);
+.writePost {
+  width: 100%;
+  background-color: $blue;
+  padding: 1rem;
   border-radius: 5px;
-  box-shadow: 3px 5px 10px rgba($dark, 0.75);
+  .postCard {
+    margin: 20px;
+    padding: 10px;
+    background-color: lighten($blue, 10%);
+    border-radius: 5px;
+    box-shadow: 3px 5px 10px rgba($dark, 0.75);
 
-  .poster {
-    font-weight: bold;
-    font-size: 1.2rem;
-  }
+    .poster {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
 
-  .postLight {
-    color: $light;
-    font-size: 0.9rem;
-  }
+    .postLight {
+      color: $light;
+      font-size: 0.9rem;
+    }
 
-  .postRate {
-    display: flex;
-    align-items: center;
+    .postRate {
+      display: flex;
+      align-items: center;
 
-    .rateItem {
-      margin-right: 0.25rem;
+      .rateItem {
+        margin-right: 0.25rem;
+      }
     }
   }
 }

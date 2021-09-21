@@ -1,14 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
+    <div class="title">
+        <h1>
+            {{ $user->name }}
+        </h1>
+        <p class="postLight">has created {{ $posts->count() }} {{ Str::plural('post', $posts->count()) }}</p>
+        {{-- <p>has received {{ $user->receivedLikes->count() }} likes </p> --}}
+    </div>
     <div class="container">
-        <div class="title">
-            <h1>
-                {{ $user->name }}
-            </h1>
-            <p>has created {{ $posts->count() }} {{ Str::plural('post', $posts->count()) }}</p>
-            <p>has received {{ $user->receivedLikes->count() }} {{ Str::plural('like', $receivedLikes->count()) }} </p>
-        </div>
         <div class="item">
             @if ($posts->count())
                 @foreach ($posts as $post)

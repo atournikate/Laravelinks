@@ -62,26 +62,32 @@ header nav ul li {
   font-size: 1rem;
 }
 
-.postCard {
+.writePost {
+  width: 100%;
+  background-color: #427183;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.writePost .postCard {
   margin: 20px;
   padding: 10px;
   background-color: #538ea5;
   border-radius: 5px;
   box-shadow: 3px 5px 10px rgba(34, 47, 55, 0.75);
 }
-.postCard .poster {
+.writePost .postCard .poster {
   font-weight: bold;
   font-size: 1.2rem;
 }
-.postCard .postLight {
+.writePost .postCard .postLight {
   color: #cae2e6;
   font-size: 0.9rem;
 }
-.postCard .postRate {
+.writePost .postCard .postRate {
   display: flex;
   align-items: center;
 }
-.postCard .postRate .rateItem {
+.writePost .postCard .postRate .rateItem {
   margin-right: 0.25rem;
 }
 
@@ -109,12 +115,20 @@ body a:hover {
   transition: all 0.3s ease-in-out;
 }
 
+.title h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.title p {
+  font-size: 1rem;
+  font-weight: thin;
+}
+
 .container {
   display: flex;
   justify-content: center;
 }
-.container .item,
-.container .writePost {
+.container .item {
   width: 100%;
   background-color: #427183;
   padding: 1rem;
@@ -142,17 +156,17 @@ form input[type=checkbox] {
   width: auto !important;
 }
 
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+}
+
 .alert {
   color: #f69d0d;
 }
 
 .box {
   border: 3px solid #f69d0d;
-}
-
-.title {
-  font-size: 1.5rem;
-  font-weight: bold;
 }
 
 svg {

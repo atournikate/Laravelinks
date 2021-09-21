@@ -10,14 +10,14 @@ class PostFactory extends Factory
     /**
      * The name of the factory's corresponding model.
      *
-     * @var string
+    //  * @var string
      */
     protected $model = Post::class;
 
     /**
      * Define the model's default state.
      *
-     * @return array
+    // * @return array
      */
     public function definition()
     {

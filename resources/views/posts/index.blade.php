@@ -23,23 +23,23 @@
                 
                 </form>
             @endauth
-        </div>
+            
 
             @if ($posts->count())
                 @foreach ($posts as $post)
-                   <x-post :post="$post" />
+                <x-post :post="$post" />
                 @endforeach
 
                 {{ $posts->links() }}
             
             @else
-             <p>
+            <p>
                 No posts yet!
             </p>
             @endif
-        </div>
+            
 
-    </div>
+        </div>
 
 
     </div>

@@ -30,12 +30,22 @@ body {
   }
 }
 
+.title {
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  p {
+    font-size: 1rem;
+    font-weight: thin;
+  }
+}
+
 .container {
   display: flex;
   justify-content: center;
 
-  .item,
-  .writePost {
+  .item {
     width: 100%;
     background-color: $blue;
     padding: 1rem;
@@ -67,6 +77,13 @@ form {
     }
   }
 }
+textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  width: 100%;
+}
 
 .alert {
   color: $gold;
@@ -74,11 +91,6 @@ form {
 
 .box {
   border: 3px solid $gold;
-}
-
-.title {
-  font-size: 1.5rem;
-  font-weight: bold;
 }
 
 svg {
