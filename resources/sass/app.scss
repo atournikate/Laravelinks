@@ -4,84 +4,84 @@
 @import "posts";
 
 body {
-    background-color: $light;
+  background-color: $light;
+  color: $dark;
+  margin: 0;
+  font-family: $reader;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $leader;
+  }
+
+  a {
+    text-decoration: none;
     color: $dark;
-    margin: 0;
-    font-family: $reader;
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: $leader;
+    &:hover {
+      color: $gold;
+      text-decoration: underline;
+      transition: all 0.3s ease-in-out;
     }
-
-    a {
-        text-decoration: none;
-        color: $dark;
-
-        &:hover {
-            color: $gold;
-            text-decoration: underline;
-            transition: all 0.3s ease-in-out;
-        }
-    }
+  }
 }
 
 .container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 
-    .item,
-    .writePost {
-        width: 80vw;
-        background-color: $blue;
-        padding: 1rem;
-        border-radius: 5px;
-    }
+  .item,
+  .writePost {
+    width: 100%;
+    background-color: $blue;
+    padding: 1rem;
+    border-radius: 5px;
+  }
 
-    .registry {
-        width: 50vw;
-    }
+  .registry {
+    width: 50vw;
+  }
 }
 
 form {
-    color: white;
-    font-size: 1.2em;
+  color: white;
+  font-size: 1.2em;
 
-    .formField {
-        margin-bottom: 1rem;
+  .formField {
+    margin-bottom: 1rem;
+  }
+
+  input {
+    width: 90%;
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid $dark;
+    border-radius: 5px;
+
+    &[type="checkbox"] {
+      width: auto !important;
     }
-
-    input {
-        width: 90%;
-        padding: 1rem;
-        background-color: white;
-        border: 1px solid $dark;
-        border-radius: 5px;
-
-        &[type="checkbox"] {
-            width: auto !important;
-        }
-
-        .postBody {
-            content: "";
-            width: 70vw;
-        }
-    }
+  }
 }
 
 .alert {
-    color: $gold;
+  color: $gold;
 }
 
 .box {
-    border: 3px solid $gold;
+  border: 3px solid $gold;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 svg {
-    display: inline-block;
-    max-width: 12px;
+  display: inline-block;
+  max-width: 12px;
 }

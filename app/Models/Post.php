@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Models\Like;
+use App\Models\Post;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
@@ -24,12 +25,20 @@ class Post extends Model
         return $this->likes->contains('user_id', $user->id);
     }
 
+    // public function ownedBy(User $user) {
+    //     return $user->user_id === $this->user_id;
+    // }
+
     public function user() {
         return $this->belongsTo(User::class);
     }
 
     public function likes() {
         return $this->hasMany(Like::class);
+    }
+
+    public function receivedLikes() {
+        return $this->hasManyThrough(Like::class, Post::class);
     }
 
 }

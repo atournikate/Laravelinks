@@ -18,7 +18,7 @@ header nav ul li {
   padding: 0.9rem;
 }
 
-.btn, .btn-log {
+.btn, .postBtn {
   display: inline-block;
   background-color: #f69d0d;
   color: #222f37;
@@ -30,7 +30,7 @@ header nav ul li {
   box-shadow: 3px 4px 7px rgba(34, 47, 55, 0.3);
   transition: all 1s ease-in-out;
 }
-.btn::after, .btn-log::after {
+.btn::after, .postBtn::after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -39,14 +39,20 @@ header nav ul li {
   box-shadow: 3px 5px 10px rgba(34, 47, 55, 0.75);
   transition: opacity 1s ease-in-out;
 }
-.btn:hover, .btn-log:hover {
+.btn:hover, .postBtn:hover {
   background-color: #222f37;
   color: #f69d0d;
   transform: scale(0.95);
 }
-.btn:hover::after, .btn-log:hover::after {
+.btn:hover::after, .postBtn:hover::after {
   opacity: 1;
   transform: scale(0.95);
+}
+
+.postBtn {
+  width: 4em;
+  padding: 5px;
+  font-size: 1rem;
 }
 
 .btn-log {
@@ -57,7 +63,6 @@ header nav ul li {
 }
 
 .postCard {
-  width: 90%;
   margin: 20px;
   padding: 10px;
   background-color: #538ea5;
@@ -78,11 +83,6 @@ header nav ul li {
 }
 .postCard .postRate .rateItem {
   margin-right: 0.25rem;
-}
-.postCard .postRate .postLike {
-  width: 4em;
-  padding: 5px;
-  font-size: 1rem;
 }
 
 body {
@@ -115,7 +115,7 @@ body a:hover {
 }
 .container .item,
 .container .writePost {
-  width: 80vw;
+  width: 100%;
   background-color: #427183;
   padding: 1rem;
   border-radius: 5px;
@@ -141,10 +141,6 @@ form input {
 form input[type=checkbox] {
   width: auto !important;
 }
-form input .postBody {
-  content: "";
-  width: 70vw;
-}
 
 .alert {
   color: #f69d0d;
@@ -152,6 +148,11 @@ form input .postBody {
 
 .box {
   border: 3px solid #f69d0d;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 svg {
