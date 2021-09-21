@@ -5,8 +5,7 @@
         <h1>
             {{ $user->name }}
         </h1>
-        <p class="postLight">has created {{ $posts->count() }} {{ Str::plural('post', $posts->count()) }}</p>
-        {{-- <p>has received {{ $user->receivedLikes->count() }} likes </p> --}}
+        <p>has created {{ $posts->count() }} {{ Str::plural('post', $posts->count()) }} and has received {{ $user->receivedLikes->count() }} {{ Str::plural('like'), $user->receivedLikes->count() }} </p>
     </div>
     <div class="container">
         <div class="item">
